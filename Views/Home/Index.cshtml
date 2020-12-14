@@ -1,8 +1,49 @@
-﻿@{
+﻿@model IEnumerable<PC3.Models.usuario>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Bienvenido</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre del producto</th>
+      <th scope="col">Enlace de la foto</th>
+      <th scope="col">Descripción</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Lugar</th>
+      <th scope="col">Nombre del Usuario</th>
+    </tr>
+  </thead>
+  <tbody>
+
+@foreach (var item in Model)
+{
+    
+
+
+    <tr>
+      <th scope="row"></th>
+      <td>@Html.DisplayFor(modelItem => item.ID)</td>
+      <td>@Html.DisplayFor(modelItem => item.nombreproducto)</td>
+      <td>@Html.DisplayFor(modelItem => item.foto)</td>
+      <td>@Html.DisplayFor(modelItem => item.descripcion)</td>
+      <td>@Html.DisplayFor(modelItem => item.precio)</td>
+      <td>@Html.DisplayFor(modelItem => item.celular)</td>
+      <td>@Html.DisplayFor(modelItem => item.lugar)</td>
+      <td>@Html.DisplayFor(modelItem => item.nombreusuario)</td>
+    </tr>
+    
+}    
+
+
+  </tbody>
+</table>
