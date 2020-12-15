@@ -34,6 +34,7 @@ namespace PC3.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 _context.Add(objusuario);
                 _context.SaveChanges();
                 

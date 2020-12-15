@@ -47,6 +47,8 @@ namespace PC3.Models
         [Column("nombreusuario")]
         public string nombreusuario { get; set; }
 
+       
+
 
     }
 }

@@ -6,7 +6,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Bienvenido</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Informese de todos nuestros productos publicados</p>
 </div>
 
 <table class="table table-hover">
@@ -21,6 +21,7 @@
       <th scope="col">Celular</th>
       <th scope="col">Lugar</th>
       <th scope="col">Nombre del Usuario</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -28,7 +29,7 @@
 @foreach (var item in Model)
 {
     
-
+    
 
     <tr>
       <th scope="row"></th>
@@ -40,6 +41,7 @@
       <td>@Html.DisplayFor(modelItem => item.celular)</td>
       <td>@Html.DisplayFor(modelItem => item.lugar)</td>
       <td>@Html.DisplayFor(modelItem => item.nombreusuario)</td>
+      
     </tr>
     
 }    
@@ -47,3 +49,4 @@
 
   </tbody>
 </table>
+
